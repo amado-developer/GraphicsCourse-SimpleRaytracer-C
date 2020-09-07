@@ -1,0 +1,3 @@
+/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/cmake-build-debug/CMakeFiles/RT1_Spheres.dir
