@@ -4,6 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/Lib.cpp" "/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/cmake-build-debug/CMakeFiles/RT1_Spheres.dir/Lib.cpp.o"
+  "/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/Materials.cpp" "/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/cmake-build-debug/CMakeFiles/RT1_Spheres.dir/Materials.cpp.o"
+  "/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/Raytracer.cpp" "/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/cmake-build-debug/CMakeFiles/RT1_Spheres.dir/Raytracer.cpp.o"
+  "/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/Sphere.cpp" "/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/cmake-build-debug/CMakeFiles/RT1_Spheres.dir/Sphere.cpp.o"
   "/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/main.cpp" "/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/cmake-build-debug/CMakeFiles/RT1_Spheres.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")

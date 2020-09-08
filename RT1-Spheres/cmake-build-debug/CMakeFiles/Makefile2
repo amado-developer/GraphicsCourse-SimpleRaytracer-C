@@ -94,12 +94,12 @@ clean: CMakeFiles/RT1_Spheres.dir/clean
 CMakeFiles/RT1_Spheres.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT1_Spheres.dir/build.make CMakeFiles/RT1_Spheres.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT1_Spheres.dir/build.make CMakeFiles/RT1_Spheres.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target RT1_Spheres"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target RT1_Spheres"
 .PHONY : CMakeFiles/RT1_Spheres.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/RT1_Spheres.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/cmake-build-debug/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/RT1_Spheres.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/RT1_Spheres.dir/rule

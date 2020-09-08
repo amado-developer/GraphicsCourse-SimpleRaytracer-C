@@ -90,17 +90,77 @@ CMakeFiles/RT1_Spheres.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RT1_Spheres.dir/main.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/main.cpp -o CMakeFiles/RT1_Spheres.dir/main.cpp.s
 
+CMakeFiles/RT1_Spheres.dir/Raytracer.cpp.o: CMakeFiles/RT1_Spheres.dir/flags.make
+CMakeFiles/RT1_Spheres.dir/Raytracer.cpp.o: ../Raytracer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/RT1_Spheres.dir/Raytracer.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT1_Spheres.dir/Raytracer.cpp.o -c /Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/Raytracer.cpp
+
+CMakeFiles/RT1_Spheres.dir/Raytracer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RT1_Spheres.dir/Raytracer.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/Raytracer.cpp > CMakeFiles/RT1_Spheres.dir/Raytracer.cpp.i
+
+CMakeFiles/RT1_Spheres.dir/Raytracer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RT1_Spheres.dir/Raytracer.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/Raytracer.cpp -o CMakeFiles/RT1_Spheres.dir/Raytracer.cpp.s
+
+CMakeFiles/RT1_Spheres.dir/Lib.cpp.o: CMakeFiles/RT1_Spheres.dir/flags.make
+CMakeFiles/RT1_Spheres.dir/Lib.cpp.o: ../Lib.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/RT1_Spheres.dir/Lib.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT1_Spheres.dir/Lib.cpp.o -c /Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/Lib.cpp
+
+CMakeFiles/RT1_Spheres.dir/Lib.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RT1_Spheres.dir/Lib.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/Lib.cpp > CMakeFiles/RT1_Spheres.dir/Lib.cpp.i
+
+CMakeFiles/RT1_Spheres.dir/Lib.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RT1_Spheres.dir/Lib.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/Lib.cpp -o CMakeFiles/RT1_Spheres.dir/Lib.cpp.s
+
+CMakeFiles/RT1_Spheres.dir/Sphere.cpp.o: CMakeFiles/RT1_Spheres.dir/flags.make
+CMakeFiles/RT1_Spheres.dir/Sphere.cpp.o: ../Sphere.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/RT1_Spheres.dir/Sphere.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT1_Spheres.dir/Sphere.cpp.o -c /Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/Sphere.cpp
+
+CMakeFiles/RT1_Spheres.dir/Sphere.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RT1_Spheres.dir/Sphere.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/Sphere.cpp > CMakeFiles/RT1_Spheres.dir/Sphere.cpp.i
+
+CMakeFiles/RT1_Spheres.dir/Sphere.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RT1_Spheres.dir/Sphere.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/Sphere.cpp -o CMakeFiles/RT1_Spheres.dir/Sphere.cpp.s
+
+CMakeFiles/RT1_Spheres.dir/Materials.cpp.o: CMakeFiles/RT1_Spheres.dir/flags.make
+CMakeFiles/RT1_Spheres.dir/Materials.cpp.o: ../Materials.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/RT1_Spheres.dir/Materials.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT1_Spheres.dir/Materials.cpp.o -c /Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/Materials.cpp
+
+CMakeFiles/RT1_Spheres.dir/Materials.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RT1_Spheres.dir/Materials.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/Materials.cpp > CMakeFiles/RT1_Spheres.dir/Materials.cpp.i
+
+CMakeFiles/RT1_Spheres.dir/Materials.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RT1_Spheres.dir/Materials.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/Materials.cpp -o CMakeFiles/RT1_Spheres.dir/Materials.cpp.s
+
 # Object files for target RT1_Spheres
 RT1_Spheres_OBJECTS = \
-"CMakeFiles/RT1_Spheres.dir/main.cpp.o"
+"CMakeFiles/RT1_Spheres.dir/main.cpp.o" \
+"CMakeFiles/RT1_Spheres.dir/Raytracer.cpp.o" \
+"CMakeFiles/RT1_Spheres.dir/Lib.cpp.o" \
+"CMakeFiles/RT1_Spheres.dir/Sphere.cpp.o" \
+"CMakeFiles/RT1_Spheres.dir/Materials.cpp.o"
 
 # External object files for target RT1_Spheres
 RT1_Spheres_EXTERNAL_OBJECTS =
 
 RT1_Spheres: CMakeFiles/RT1_Spheres.dir/main.cpp.o
+RT1_Spheres: CMakeFiles/RT1_Spheres.dir/Raytracer.cpp.o
+RT1_Spheres: CMakeFiles/RT1_Spheres.dir/Lib.cpp.o
+RT1_Spheres: CMakeFiles/RT1_Spheres.dir/Sphere.cpp.o
+RT1_Spheres: CMakeFiles/RT1_Spheres.dir/Materials.cpp.o
 RT1_Spheres: CMakeFiles/RT1_Spheres.dir/build.make
 RT1_Spheres: CMakeFiles/RT1_Spheres.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable RT1_Spheres"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable RT1_Spheres"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RT1_Spheres.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

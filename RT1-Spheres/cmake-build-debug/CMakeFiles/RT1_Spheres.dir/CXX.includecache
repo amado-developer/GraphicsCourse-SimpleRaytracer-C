@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/Lib.h
+tuple
+-
+
+/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/Materials.h
+vector
+-
+
+/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/Raytracer.h
+vector
+-
+string
+-
+Sphere.h
+/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/Sphere.h
+Lib.h
+/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/Lib.h
+
+/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/Sphere.h
+vector
+-
+tuple
+-
+vector
+-
+Lib.h
+/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/Lib.h
+
+/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/main.cpp
+iostream
+-
+Raytracer.h
+/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/Raytracer.h
+Materials.h
+/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/Materials.h
+

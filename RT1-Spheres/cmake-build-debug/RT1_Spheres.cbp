@@ -80,6 +80,30 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/Lib.cpp">
+			<Option target="RT1_Spheres"/>
+		</Unit>
+		<Unit filename="/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/Lib.h">
+			<Option target="RT1_Spheres"/>
+		</Unit>
+		<Unit filename="/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/Materials.cpp">
+			<Option target="RT1_Spheres"/>
+		</Unit>
+		<Unit filename="/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/Materials.h">
+			<Option target="RT1_Spheres"/>
+		</Unit>
+		<Unit filename="/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/Raytracer.cpp">
+			<Option target="RT1_Spheres"/>
+		</Unit>
+		<Unit filename="/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/Raytracer.h">
+			<Option target="RT1_Spheres"/>
+		</Unit>
+		<Unit filename="/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/Sphere.cpp">
+			<Option target="RT1_Spheres"/>
+		</Unit>
+		<Unit filename="/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/Sphere.h">
+			<Option target="RT1_Spheres"/>
+		</Unit>
 		<Unit filename="/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT1-Spheres/main.cpp">
 			<Option target="RT1_Spheres"/>
 		</Unit>

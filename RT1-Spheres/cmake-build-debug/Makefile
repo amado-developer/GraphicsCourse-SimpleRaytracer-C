@@ -143,6 +143,114 @@ RT1_Spheres/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT1_Spheres.dir/build.make CMakeFiles/RT1_Spheres.dir/build
 .PHONY : RT1_Spheres/fast
 
+Lib.o: Lib.cpp.o
+
+.PHONY : Lib.o
+
+# target to build an object file
+Lib.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT1_Spheres.dir/build.make CMakeFiles/RT1_Spheres.dir/Lib.cpp.o
+.PHONY : Lib.cpp.o
+
+Lib.i: Lib.cpp.i
+
+.PHONY : Lib.i
+
+# target to preprocess a source file
+Lib.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT1_Spheres.dir/build.make CMakeFiles/RT1_Spheres.dir/Lib.cpp.i
+.PHONY : Lib.cpp.i
+
+Lib.s: Lib.cpp.s
+
+.PHONY : Lib.s
+
+# target to generate assembly for a file
+Lib.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT1_Spheres.dir/build.make CMakeFiles/RT1_Spheres.dir/Lib.cpp.s
+.PHONY : Lib.cpp.s
+
+Materials.o: Materials.cpp.o
+
+.PHONY : Materials.o
+
+# target to build an object file
+Materials.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT1_Spheres.dir/build.make CMakeFiles/RT1_Spheres.dir/Materials.cpp.o
+.PHONY : Materials.cpp.o
+
+Materials.i: Materials.cpp.i
+
+.PHONY : Materials.i
+
+# target to preprocess a source file
+Materials.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT1_Spheres.dir/build.make CMakeFiles/RT1_Spheres.dir/Materials.cpp.i
+.PHONY : Materials.cpp.i
+
+Materials.s: Materials.cpp.s
+
+.PHONY : Materials.s
+
+# target to generate assembly for a file
+Materials.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT1_Spheres.dir/build.make CMakeFiles/RT1_Spheres.dir/Materials.cpp.s
+.PHONY : Materials.cpp.s
+
+Raytracer.o: Raytracer.cpp.o
+
+.PHONY : Raytracer.o
+
+# target to build an object file
+Raytracer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT1_Spheres.dir/build.make CMakeFiles/RT1_Spheres.dir/Raytracer.cpp.o
+.PHONY : Raytracer.cpp.o
+
+Raytracer.i: Raytracer.cpp.i
+
+.PHONY : Raytracer.i
+
+# target to preprocess a source file
+Raytracer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT1_Spheres.dir/build.make CMakeFiles/RT1_Spheres.dir/Raytracer.cpp.i
+.PHONY : Raytracer.cpp.i
+
+Raytracer.s: Raytracer.cpp.s
+
+.PHONY : Raytracer.s
+
+# target to generate assembly for a file
+Raytracer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT1_Spheres.dir/build.make CMakeFiles/RT1_Spheres.dir/Raytracer.cpp.s
+.PHONY : Raytracer.cpp.s
+
+Sphere.o: Sphere.cpp.o
+
+.PHONY : Sphere.o
+
+# target to build an object file
+Sphere.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT1_Spheres.dir/build.make CMakeFiles/RT1_Spheres.dir/Sphere.cpp.o
+.PHONY : Sphere.cpp.o
+
+Sphere.i: Sphere.cpp.i
+
+.PHONY : Sphere.i
+
+# target to preprocess a source file
+Sphere.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT1_Spheres.dir/build.make CMakeFiles/RT1_Spheres.dir/Sphere.cpp.i
+.PHONY : Sphere.cpp.i
+
+Sphere.s: Sphere.cpp.s
+
+.PHONY : Sphere.s
+
+# target to generate assembly for a file
+Sphere.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT1_Spheres.dir/build.make CMakeFiles/RT1_Spheres.dir/Sphere.cpp.s
+.PHONY : Sphere.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -179,6 +287,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... RT1_Spheres"
+	@echo "... Lib.o"
+	@echo "... Lib.i"
+	@echo "... Lib.s"
+	@echo "... Materials.o"
+	@echo "... Materials.i"
+	@echo "... Materials.s"
+	@echo "... Raytracer.o"
+	@echo "... Raytracer.i"
+	@echo "... Raytracer.s"
+	@echo "... Sphere.o"
+	@echo "... Sphere.i"
+	@echo "... Sphere.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
