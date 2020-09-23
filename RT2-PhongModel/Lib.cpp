@@ -9,7 +9,7 @@
 /***********************************************************************
  * All these Math operations were provided by Denn1s (Github) in class
  * *********************************************************************/
-tuple<double, double, double> Lib::sum(tuple<int, int, int> v0, tuple<int, int, int> v1)
+tuple<double, double, double> Lib::sum(tuple<double, double, double> v0, tuple<double, double, double> v1)
 {
     return make_tuple((get<0>(v0) + get<0>(v1)), (get<1>(v0) + get<1>(v1)), (get<2>(v0) + get<2>(v1)));
 }
@@ -17,7 +17,7 @@ tuple<double, double, double> Lib::sub(tuple<double, double, double> v0, tuple<d
 {
     return make_tuple((get<0>(v0) - get<0>(v1)), (get<1>(v0) - get<1>(v1)), (get<2>(v0) - get<2>(v1)));
 }
-tuple<double, double, double> Lib:: mult(tuple<int, int, int> v0, int k){
+tuple<double, double, double> Lib:: mult(tuple<double, double, double> v0, double k){
     return make_tuple((get<0>(v0) * k), (get<1>(v0) * k), (get<2>(v0) * k));
 }
 double Lib:: dot(tuple<double, double, double> v0, tuple<double, double, double> v1)
@@ -59,9 +59,10 @@ tuple<double, double, double> Lib::cross(tuple<double, double, double> v1, tuple
     return cross;
 }
 
-
-//BMP
-
+tuple<double, double, double> Lib::reflect(tuple<double, double, double> I, tuple<double, double, double> N)
+{
+    return norm(sub(I, mult(N, 2 * dot(I, N))));
+}
 
 
 

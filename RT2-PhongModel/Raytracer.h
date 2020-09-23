@@ -37,9 +37,8 @@ class Raytracer
         void render();
         void setScene(Sphere sphere);
         void setLight(Light light);
-        vector<double> sceneIntersect(tuple<double, double, double> origin, tuple<double, double, double> direction);
-
-    Raytracer();
+        Materials sceneIntersect(tuple<double, double, double> origin, tuple<double, double, double> direction);
+        Raytracer();
 };
 
 

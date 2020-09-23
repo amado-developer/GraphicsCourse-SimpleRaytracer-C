@@ -10,3 +10,4 @@ Light::Light(tuple<double, double, double> position, double intensity)
 }
 
 Light::Light(){}
+

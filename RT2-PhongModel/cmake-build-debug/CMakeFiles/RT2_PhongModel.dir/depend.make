@@ -16,12 +16,14 @@ CMakeFiles/RT2_PhongModel.dir/Materials.cpp.o: ../Materials.h
 CMakeFiles/RT2_PhongModel.dir/Raytracer.cpp.o: ../Intersect.h
 CMakeFiles/RT2_PhongModel.dir/Raytracer.cpp.o: ../Lib.h
 CMakeFiles/RT2_PhongModel.dir/Raytracer.cpp.o: ../Light.h
+CMakeFiles/RT2_PhongModel.dir/Raytracer.cpp.o: ../Materials.h
 CMakeFiles/RT2_PhongModel.dir/Raytracer.cpp.o: ../Raytracer.cpp
 CMakeFiles/RT2_PhongModel.dir/Raytracer.cpp.o: ../Raytracer.h
 CMakeFiles/RT2_PhongModel.dir/Raytracer.cpp.o: ../Sphere.h
 
 CMakeFiles/RT2_PhongModel.dir/Sphere.cpp.o: ../Intersect.h
 CMakeFiles/RT2_PhongModel.dir/Sphere.cpp.o: ../Lib.h
+CMakeFiles/RT2_PhongModel.dir/Sphere.cpp.o: ../Materials.h
 CMakeFiles/RT2_PhongModel.dir/Sphere.cpp.o: ../Sphere.cpp
 CMakeFiles/RT2_PhongModel.dir/Sphere.cpp.o: ../Sphere.h
 

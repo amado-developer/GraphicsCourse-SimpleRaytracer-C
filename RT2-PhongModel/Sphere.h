@@ -9,6 +9,7 @@
 #include <vector>
 #include "Lib.h"
 #include "Intersect.h"
+#include "Materials.h"
 
 using namespace std;
 
@@ -16,12 +17,12 @@ using namespace std;
 class Sphere
 {
     public:
-        Sphere(tuple<double, double, double> center, double radius,  vector<double> material);
+        Sphere(tuple<double, double, double> center, double radius,  Materials material);
         Intersect rayIntersect(tuple<double, double, double> origin, tuple<double, double, double> direction);
-        vector<double> getMaterial();
+        Materials getMaterial();
     private:
         tuple<double, double, double> center;
-        vector<double> material;
+        Materials material;
         double radius;
         Lib lib;
 };

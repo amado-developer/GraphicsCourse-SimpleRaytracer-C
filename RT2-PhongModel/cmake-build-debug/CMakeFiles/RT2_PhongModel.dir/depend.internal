@@ -17,12 +17,14 @@ CMakeFiles/RT2_PhongModel.dir/Raytracer.cpp.o
  /Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT2-PhongModel/Intersect.h
  /Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT2-PhongModel/Lib.h
  /Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT2-PhongModel/Light.h
+ /Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT2-PhongModel/Materials.h
  /Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT2-PhongModel/Raytracer.cpp
  /Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT2-PhongModel/Raytracer.h
  /Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT2-PhongModel/Sphere.h
 CMakeFiles/RT2_PhongModel.dir/Sphere.cpp.o
  /Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT2-PhongModel/Intersect.h
  /Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT2-PhongModel/Lib.h
+ /Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT2-PhongModel/Materials.h
  /Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT2-PhongModel/Sphere.cpp
  /Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT2-PhongModel/Sphere.h
 CMakeFiles/RT2_PhongModel.dir/main.cpp.o

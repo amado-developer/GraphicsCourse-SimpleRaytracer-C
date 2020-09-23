@@ -4,7 +4,7 @@
 # define M_PI
 
 #include "Raytracer.h"
-
+#include <iostream>
 #include <vector>
 #include <tuple>
 #include <cmath>
@@ -48,11 +48,12 @@ void Raytracer::glPoint(int x, int y)
     this->framebuffer[x][y][1] = this->pointColor[1];
     this->framebuffer[x][y][2] = this->pointColor[2];
 }
-vector<double> Raytracer::sceneIntersect(tuple<double, double, double> origin, tuple<double, double, double> direction)
+Materials Raytracer::sceneIntersect(tuple<double, double, double> origin, tuple<double, double, double> direction)
 {
     double zbuffer = INFINITY;
-    vector<double> material{};
-
+    Materials material;
+    Intersect i;
+    this->intersect = i;
     for(auto obj : this->scene)
     {
         auto hit = obj.rayIntersect(origin, direction);
@@ -60,6 +61,7 @@ vector<double> Raytracer::sceneIntersect(tuple<double, double, double> origin, t
         {
             zbuffer = hit.getDistance();
             material = obj.getMaterial();
+            material.setImpacted(true);
             this->intersect = hit;
         }
     }
@@ -67,25 +69,65 @@ vector<double> Raytracer::sceneIntersect(tuple<double, double, double> origin, t
 }
 vector<double> Raytracer::castRay(tuple<double, double, double> origin, tuple<double, double, double> direction)
 {
-    vector<double> impactedMaterial{sceneIntersect(origin, direction)};
+    auto impactedMaterial{sceneIntersect(origin, direction)};
+    auto tempIntersect{this->intersect};
 
-    if(impactedMaterial.size() == 0)
+    if(impactedMaterial.getDiffuse().size() == 0 || impactedMaterial.getAlbedo().size() == 0 ||impactedMaterial.getSpect() == 0)
     {
         return {50.0, 50.0, 200.0};
     }
 
+    auto lightDirection{lib.norm(lib.sub(this->light.position, tempIntersect.point))};
+    auto lightDistance{lib.length(lib.sub(this->light.position, tempIntersect.point))};
 
-    auto lightDirection{lib.norm(lib.sub(this->light.position, this->intersect.point))};
-    double intensity{this->light.intensity * lib.dot(lightDirection, intersect.normal)};
+    auto normalOffset{lib.mult(tempIntersect.normal, 1.1)};
+
+    tuple<double, double, double> shadowOrigin{};
+    if(lib.dot(lightDirection, tempIntersect.normal) < 0)
+        shadowOrigin = lib.sub(tempIntersect.point, normalOffset);
+    else
+        lib.sum(tempIntersect.point, normalOffset);
+
+    auto shadowMaterial{sceneIntersect(shadowOrigin, lightDirection)};
+    auto shadowIntersect{this->intersect};
+    double shadowIntensity{0};
+    if(shadowIntersect.getDistance() > 0 && lib.length(lib.sub(shadowIntersect.point, shadowOrigin)) < lightDistance)
+        shadowIntensity = 0.9;
+
+    double calc{lib.dot(lightDirection, tempIntersect.normal)};
+    if(calc < 0.0)
+        calc = 0.0;
+    double intensity{this->light.intensity * calc * (1 - shadowIntensity)};
+    auto reflection{lib.reflect(lightDirection, tempIntersect.normal)};
+    auto specularIntensity
+    {
+        this->light.intensity * (pow(-lib.dot(reflection, direction), impactedMaterial.getSpect()))
+    };
 
     if(intensity < 0.0)
         intensity = 0.0;
 
-    double r{round(impactedMaterial[0] * intensity)};
-    double g{round(impactedMaterial[1] * intensity)};
-    double b{round(impactedMaterial[2] * intensity)};
+    if(specularIntensity < 0.0)
+        specularIntensity = 0.0;
 
-    return {r, g, b};
+    cout<<(intensity)<<endl;
+
+    vector<double> difusse
+    {
+        impactedMaterial.getDiffuse()[0] * intensity * impactedMaterial.getAlbedo()[0],
+        impactedMaterial.getDiffuse()[1] * intensity * impactedMaterial.getAlbedo()[0],
+        impactedMaterial.getDiffuse()[2] * intensity * impactedMaterial.getAlbedo()[0]
+    };
+
+    double specular{255 * specularIntensity * impactedMaterial.getAlbedo()[1]};
+    vector<double> ray{};
+
+    for (int i{0}; i < 3; ++i)
+    {
+        ray.push_back(difusse[i] + specular);
+    }
+
+    return ray;
 }
 void Raytracer::setScene(Sphere sphere)
 {
@@ -99,10 +141,10 @@ void Raytracer::render()
         for(auto x{0}; x < width; ++x)
         {
             double i{(2.0*(x + 0.5)/width - 1.0)*tan(fov/2.0)*width/height};
-            double j{-(2.0*(y + 0.5)/height - 1.0)*tan(fov/2.0)};
+            double j{(2.0*(y + 0.5)/height - 1.0)*tan(fov/2.0)};
             tuple<double, double, double> direction{this->lib.norm(make_tuple(i, j, -1))};
             double r = (this->castRay(make_tuple(0, 0, 0), direction).at(0)) / 255.0;
-            double g = (this->castRay(make_tuple(0, 0, 0), direction).at(1)) /255.0;
+            double g = (this->castRay(make_tuple(0, 0, 0), direction).at(1)) / 255.0;
             double b = (this->castRay(make_tuple(0, 0, 0), direction).at(2)) / 255.0;
             this->glColor(r, g, b);
             this->glPoint(x, y);

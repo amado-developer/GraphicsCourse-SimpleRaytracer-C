@@ -4,12 +4,36 @@
 
 #include "Materials.h"
 
-Materials::Materials(vector<double> diffuse)
+Materials::Materials(vector<double> diffuse, vector<double> albedo, double spect)
 {
     this->diffuse = diffuse;
+    this->albedo = albedo;
+    this->spect = spect;
 }
 
-vector<double> Materials::getMaterial()
+const vector<double> &Materials::getDiffuse() const
 {
-    return this->diffuse;
+    return diffuse;
+}
+
+const vector<double> &Materials::getAlbedo() const
+{
+    return albedo;
+}
+
+double Materials::getSpect() const
+{
+    return spect;
+}
+
+Materials::Materials() {}
+
+bool Materials::hasImpacted() const
+{
+    return impacted;
+}
+
+void Materials::setImpacted(bool impacted)
+{
+    Materials::impacted = impacted;
 }

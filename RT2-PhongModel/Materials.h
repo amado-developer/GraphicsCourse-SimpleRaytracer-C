@@ -11,10 +11,22 @@ class Materials
 {
     private:
         vector<double> diffuse;
+        vector<double> albedo;
+        double spect;
+        bool impacted;
 
     public:
-        Materials(vector<double> diffuse);
-        vector<double> getMaterial();
+        Materials(vector<double> diffuse, vector<double> albedo, double spect);
+
+        Materials();
+
+        bool hasImpacted() const;
+
+        const vector<double> &getDiffuse() const;
+        const vector<double> &getAlbedo() const;
+        double getSpect() const;
+
+    void setImpacted(bool impacted);
 };
 
 

@@ -22,6 +22,18 @@ tuple
 vector
 -
 
+/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT2-PhongModel/Raytracer.cpp
+Raytracer.h
+/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT2-PhongModel/Raytracer.h
+iostream
+-
+vector
+-
+tuple
+-
+cmath
+-
+
 /Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT2-PhongModel/Raytracer.h
 vector
 -
@@ -45,12 +57,6 @@ Lib.h
 /Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT2-PhongModel/Lib.h
 Intersect.h
 /Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT2-PhongModel/Intersect.h
-
-/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT2-PhongModel/main.cpp
-iostream
--
-Raytracer.h
-/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT2-PhongModel/Raytracer.h
 Materials.h
 /Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/RT2-PhongModel/Materials.h
 

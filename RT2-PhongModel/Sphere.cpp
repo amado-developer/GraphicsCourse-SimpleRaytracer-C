@@ -9,7 +9,7 @@
 
 using namespace std;
 
-Sphere::Sphere(tuple<double, double, double> center, double radius, vector<double> material)
+Sphere::Sphere(tuple<double, double, double> center, double radius, Materials material)
 {
     this->center = center;
     this->radius = radius;
@@ -22,11 +22,11 @@ Intersect Sphere::rayIntersect(tuple<double, double, double> origin, tuple<doubl
     double tca{lib.dot(L, direction)};
     double l{lib.length(L)};
     double d2{pow(l, 2) - pow(tca, 2)};
-    if(d2 > this->radius)
+    if(d2 > pow(this->radius, 2))
     {
         return Intersect(0, false);
     }
-    double thc{pow(pow(this->radius, 2) - 2, 0.5)};
+    double thc{pow(pow(this->radius, 2) - d2, 0.5)};
     double t0{tca - thc};
     double t1{tca + thc};
 
@@ -40,7 +40,7 @@ Intersect Sphere::rayIntersect(tuple<double, double, double> origin, tuple<doubl
     return Intersect(t0, true, hit, normal);
 }
 
-vector<double> Sphere::getMaterial()
+Materials Sphere::getMaterial()
 {
     return this->material;
 }

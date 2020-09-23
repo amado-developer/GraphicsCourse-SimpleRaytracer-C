@@ -18,6 +18,10 @@ class Lib
         double length(tuple<double, double, double> v0);
         tuple<double, double, double> norm(tuple<double, double, double> v0);
         tuple<double, double, double> cross(tuple<double, double, double> u, tuple<double, double, double> w);
+        tuple<double, double, double> reflect(tuple<double, double, double> I, tuple<double, double, double> N);
 
+    tuple<double, double, double> mult(tuple<double, double, double> v0, double k);
+
+    tuple<double, double, double> sum(tuple<double, double, double> v0, tuple<double, double, double> v1);
 };
 #endif //RT1_SPHERES_LIB_H
