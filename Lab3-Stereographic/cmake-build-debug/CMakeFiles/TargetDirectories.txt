@@ -1,0 +1,3 @@
+/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/Lab3-Stereographic/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/Lab3-Stereographic/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/Lab3-Stereographic/cmake-build-debug/CMakeFiles/Lab3_Stereographic.dir
