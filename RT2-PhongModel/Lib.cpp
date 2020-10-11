@@ -58,10 +58,11 @@ tuple<double, double, double> Lib::cross(tuple<double, double, double> v1, tuple
             };
     return cross;
 }
-
 tuple<double, double, double> Lib::reflect(tuple<double, double, double> I, tuple<double, double, double> N)
 {
-    return norm(sub(I, mult(N, 2 * dot(I, N))));
+    auto lm = mult(I, -1);
+    auto n = mult(N, 2 * dot(lm, N));
+    return norm(sub(lm, n));
 }
 
 

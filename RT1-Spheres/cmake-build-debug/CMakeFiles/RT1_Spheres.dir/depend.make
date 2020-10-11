@@ -4,6 +4,7 @@
 CMakeFiles/RT1_Spheres.dir/Lib.cpp.o: ../Lib.cpp
 CMakeFiles/RT1_Spheres.dir/Lib.cpp.o: ../Lib.h
 
+CMakeFiles/RT1_Spheres.dir/Materials.cpp.o: ../Lib.h
 CMakeFiles/RT1_Spheres.dir/Materials.cpp.o: ../Materials.cpp
 CMakeFiles/RT1_Spheres.dir/Materials.cpp.o: ../Materials.h
 

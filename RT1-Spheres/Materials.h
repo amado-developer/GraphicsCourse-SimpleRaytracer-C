@@ -11,6 +11,7 @@ class Materials
 {
     private:
         vector<double> diffuse;
+
     public:
         Materials(vector<double> diffuse);
         vector<double> getMaterial();

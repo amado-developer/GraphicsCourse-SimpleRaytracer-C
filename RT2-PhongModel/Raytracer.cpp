@@ -57,12 +57,15 @@ Materials Raytracer::sceneIntersect(tuple<double, double, double> origin, tuple<
     for(auto obj : this->scene)
     {
         auto hit = obj.rayIntersect(origin, direction);
-        if(hit.hasImpacted() && hit.getDistance() < zbuffer)
+        if(hit.hasImpacted())
         {
-            zbuffer = hit.getDistance();
-            material = obj.getMaterial();
-            material.setImpacted(true);
-            this->intersect = hit;
+            if(hit.getDistance() < zbuffer)
+            {
+                zbuffer = hit.getDistance();
+                material = obj.getMaterial();
+                material.setImpacted(true);
+                this->intersect = hit;
+            }
         }
     }
     return material;
@@ -86,12 +89,12 @@ vector<double> Raytracer::castRay(tuple<double, double, double> origin, tuple<do
     if(lib.dot(lightDirection, tempIntersect.normal) < 0)
         shadowOrigin = lib.sub(tempIntersect.point, normalOffset);
     else
-        lib.sum(tempIntersect.point, normalOffset);
+        shadowOrigin = lib.sum(tempIntersect.point, normalOffset);
 
     auto shadowMaterial{sceneIntersect(shadowOrigin, lightDirection)};
     auto shadowIntersect{this->intersect};
-    double shadowIntensity{0};
-    if(shadowIntersect.getDistance() > 0 && lib.length(lib.sub(shadowIntersect.point, shadowOrigin)) < lightDistance)
+    double shadowIntensity{0.0};
+    if(shadowMaterial.getDiffuse().size() > 0 && lib.length(lib.sub(shadowIntersect.point, shadowOrigin)) < lightDistance)
         shadowIntensity = 0.9;
 
     double calc{lib.dot(lightDirection, tempIntersect.normal)};
@@ -99,18 +102,15 @@ vector<double> Raytracer::castRay(tuple<double, double, double> origin, tuple<do
         calc = 0.0;
     double intensity{this->light.intensity * calc * (1 - shadowIntensity)};
     auto reflection{lib.reflect(lightDirection, tempIntersect.normal)};
+
+    auto calc2{-(lib.dot(reflection, direction))};
+    if(calc2 < 0.0)
+        calc2 = 0.0;
+
     auto specularIntensity
     {
-        this->light.intensity * (pow(-lib.dot(reflection, direction), impactedMaterial.getSpect()))
+        this->light.intensity * (pow(calc2, impactedMaterial.getSpect()))
     };
-
-    if(intensity < 0.0)
-        intensity = 0.0;
-
-    if(specularIntensity < 0.0)
-        specularIntensity = 0.0;
-
-    cout<<(intensity)<<endl;
 
     vector<double> difusse
     {
@@ -119,7 +119,7 @@ vector<double> Raytracer::castRay(tuple<double, double, double> origin, tuple<do
         impactedMaterial.getDiffuse()[2] * intensity * impactedMaterial.getAlbedo()[0]
     };
 
-    double specular{255 * specularIntensity * impactedMaterial.getAlbedo()[1]};
+    double specular{255.0 * specularIntensity * impactedMaterial.getAlbedo()[1]};
     vector<double> ray{};
 
     for (int i{0}; i < 3; ++i)
@@ -143,9 +143,10 @@ void Raytracer::render()
             double i{(2.0*(x + 0.5)/width - 1.0)*tan(fov/2.0)*width/height};
             double j{(2.0*(y + 0.5)/height - 1.0)*tan(fov/2.0)};
             tuple<double, double, double> direction{this->lib.norm(make_tuple(i, j, -1))};
-            double r = (this->castRay(make_tuple(0, 0, 0), direction).at(0)) / 255.0;
-            double g = (this->castRay(make_tuple(0, 0, 0), direction).at(1)) / 255.0;
-            double b = (this->castRay(make_tuple(0, 0, 0), direction).at(2)) / 255.0;
+            auto color {(this->castRay(make_tuple(0, 0, 0), direction))};
+            double r = color.at(0) / 255.0;
+            double g = color.at(1) / 255.0;
+            double b = color.at(2) / 255.0;
             this->glColor(r, g, b);
             this->glPoint(x, y);
         }
@@ -211,12 +212,10 @@ void Raytracer::glFinish(char *filename)
     }
     fclose(imageFile);
 }
-
 void Raytracer::setLight(Light light)
 {
     this->light = light;
 }
-
 Raytracer::Raytracer() {
 
 }
