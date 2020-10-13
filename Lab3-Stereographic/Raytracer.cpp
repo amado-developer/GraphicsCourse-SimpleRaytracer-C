@@ -35,6 +35,10 @@ void Raytracer::glClearColor(double r, double g, double b)
     backgroundColor[2] = (unsigned char) (r * 255.0);
     backgroundColor[1] = (unsigned char) (g * 255.0);
     backgroundColor[0] = (unsigned char) (b * 255.0);
+
+    fontColor[0] = r;
+    fontColor[1] = g;
+    fontColor[2] = b;
 }
 void Raytracer::glColor(double r, double g, double b)
 {
@@ -54,22 +58,43 @@ Materials Raytracer::sceneIntersect(tuple<double, double, double> origin, tuple<
     Materials material;
     Intersect i;
     this->intersect = i;
-    for(auto obj : this->scene)
-    {
-        auto hit = obj.rayIntersect(origin, direction);
-        if(hit.hasImpacted())
-        {
-            if(hit.getDistance() < zbuffer)
-            {
-                zbuffer = hit.getDistance();
-                material = obj.getMaterial();
-                material.setImpacted(true);
-                this->intersect = hit;
+    switch (type) {
+        case 1: {
+            for (auto obj : this->scene) {
+                auto hit = obj.rayIntersect(origin, direction);
+                if (hit.hasImpacted()) {
+                    if (hit.getDistance() < zbuffer) {
+                        zbuffer = hit.getDistance();
+                        material = obj.getMaterial();
+                        material.setImpacted(true);
+                        this->intersect = hit;
+                    }
+                }
             }
         }
+//
+//        case 2:
+//        {
+//            for (auto obj : this->planeScene)
+//            {
+//                auto hit = obj.rayIntersect(origin, direction);
+//                if (hit.hasImpacted())
+//                {
+//                    if (hit.getDistance())
+//                    {
+//                        zbuffer = hit.getDistance();
+//                        material = obj.getMaterial();
+//                        material.setImpacted(true);
+//                        this->intersect = hit;
+//                    }
+//                }
+//            }
+//        }
+//    }
     }
     return material;
 }
+
 vector<double> Raytracer::castRay(tuple<double, double, double> origin, tuple<double, double, double> direction, int recursion) {
     auto impactedMaterial{sceneIntersect(origin, direction)};
     auto tempIntersect{this->intersect};
@@ -174,6 +199,70 @@ void Raytracer::setScene(Sphere sphere, double refractionIndex)
     this->scene.push_back(sphere);
     this->refractionIndex = refractionIndex;
 }
+void Raytracer::setScene(Plane plane)
+{
+    this->planeScene.push_back(plane);
+}
+void Raytracer::render3D()
+{
+    int fov = (M_PI / 2);
+    for(auto y{0}; y < height; ++y)
+    {
+        for(auto x{0}; x < width; ++x)
+        {
+            double i{((2.0*(x + 0.5)/width - 1.0)*tan(fov/2.0)*width/height)};
+            double j{(2.0*(y + 0.5)/height - 1.0)*tan(fov/2.0)};
+            tuple<double, double, double> direction{this->lib.norm(make_tuple(i, j, -1))};
+            auto redColor{(this->castRay(make_tuple(0.25, 0.5, 0.0), direction, 0))};
+            vector<double> red3DColor{};
+
+            if(!(redColor == fontColor))
+            {
+               red3DColor = {redColor[0] * 0.55 + 100.0, redColor[1] * 0.55, redColor[2] * 0.55};
+            }
+
+            else
+            {
+               red3DColor =  redColor;
+            }
+
+            auto blueColor{(this->castRay(make_tuple(-0.25, 0.5, 0.0), direction, 0))};
+            vector<double> blue3DColor{};
+            if(!(blueColor == fontColor))
+            {
+                blue3DColor = {blueColor[0] * 0.55, blueColor[1] * 0.55, blueColor[2] * 0.55 + 100.0};
+            }
+
+            else
+            {
+                blue3DColor =  blueColor;
+            }
+
+            vector<double> color{red3DColor[0] + blue3DColor[0], red3DColor[1] + blue3DColor[1], red3DColor[2] + blue3DColor[2]};
+
+            if(color[0] > 255.0)
+            {
+                color[0] = 255.0;
+            }
+
+            if(color[1] > 255.0)
+            {
+                color[1] = 255.0;
+            }
+
+            if(color[2] > 255.0)
+            {
+                color[2] = 255.0;
+            }
+            double r = color.at(0) / 255.0;
+            double g = color.at(1) / 255.0;
+            double b = color.at(2) / 255.0;
+            this->glColor(r, g, b);
+            this->glPoint(x, y);
+        }
+    }
+}
+
 void Raytracer::render()
 {
     int fov = (M_PI / 2);
@@ -184,7 +273,7 @@ void Raytracer::render()
             double i{(2.0*(x + 0.5)/width - 1.0)*tan(fov/2.0)*width/height};
             double j{(2.0*(y + 0.5)/height - 1.0)*tan(fov/2.0)};
             tuple<double, double, double> direction{this->lib.norm(make_tuple(i, j, -1))};
-             auto color {(this->castRay(make_tuple(0, 0, 0), direction, 0))};
+            auto color {(this->castRay(make_tuple(0, 0, 0), direction, 0))};
             double r = color.at(0) / 255.0;
             double g = color.at(1) / 255.0;
             double b = color.at(2) / 255.0;
@@ -257,6 +346,12 @@ void Raytracer::setLight(Light light)
 {
     this->light = light;
 }
+
+void Raytracer::setEnvMap(Texture envMap)
+{
+    this->envMap = envMap;
+}
+
 Raytracer::Raytracer()
 {
 

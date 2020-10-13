@@ -251,6 +251,33 @@ Materials.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab3_Stereographic.dir/build.make CMakeFiles/Lab3_Stereographic.dir/Materials.cpp.s
 .PHONY : Materials.cpp.s
 
+Plane.o: Plane.cpp.o
+
+.PHONY : Plane.o
+
+# target to build an object file
+Plane.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab3_Stereographic.dir/build.make CMakeFiles/Lab3_Stereographic.dir/Plane.cpp.o
+.PHONY : Plane.cpp.o
+
+Plane.i: Plane.cpp.i
+
+.PHONY : Plane.i
+
+# target to preprocess a source file
+Plane.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab3_Stereographic.dir/build.make CMakeFiles/Lab3_Stereographic.dir/Plane.cpp.i
+.PHONY : Plane.cpp.i
+
+Plane.s: Plane.cpp.s
+
+.PHONY : Plane.s
+
+# target to generate assembly for a file
+Plane.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab3_Stereographic.dir/build.make CMakeFiles/Lab3_Stereographic.dir/Plane.cpp.s
+.PHONY : Plane.cpp.s
+
 Raytracer.o: Raytracer.cpp.o
 
 .PHONY : Raytracer.o
@@ -305,6 +332,33 @@ Sphere.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab3_Stereographic.dir/build.make CMakeFiles/Lab3_Stereographic.dir/Sphere.cpp.s
 .PHONY : Sphere.cpp.s
 
+Texture.o: Texture.cpp.o
+
+.PHONY : Texture.o
+
+# target to build an object file
+Texture.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab3_Stereographic.dir/build.make CMakeFiles/Lab3_Stereographic.dir/Texture.cpp.o
+.PHONY : Texture.cpp.o
+
+Texture.i: Texture.cpp.i
+
+.PHONY : Texture.i
+
+# target to preprocess a source file
+Texture.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab3_Stereographic.dir/build.make CMakeFiles/Lab3_Stereographic.dir/Texture.cpp.i
+.PHONY : Texture.cpp.i
+
+Texture.s: Texture.cpp.s
+
+.PHONY : Texture.s
+
+# target to generate assembly for a file
+Texture.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab3_Stereographic.dir/build.make CMakeFiles/Lab3_Stereographic.dir/Texture.cpp.s
+.PHONY : Texture.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -353,12 +407,18 @@ help:
 	@echo "... Materials.o"
 	@echo "... Materials.i"
 	@echo "... Materials.s"
+	@echo "... Plane.o"
+	@echo "... Plane.i"
+	@echo "... Plane.s"
 	@echo "... Raytracer.o"
 	@echo "... Raytracer.i"
 	@echo "... Raytracer.s"
 	@echo "... Sphere.o"
 	@echo "... Sphere.i"
 	@echo "... Sphere.s"
+	@echo "... Texture.o"
+	@echo "... Texture.i"
+	@echo "... Texture.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

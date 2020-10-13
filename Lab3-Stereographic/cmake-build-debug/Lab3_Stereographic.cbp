@@ -104,6 +104,12 @@
 		<Unit filename="/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/Lab3-Stereographic/Materials.h">
 			<Option target="Lab3_Stereographic"/>
 		</Unit>
+		<Unit filename="/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/Lab3-Stereographic/Plane.cpp">
+			<Option target="Lab3_Stereographic"/>
+		</Unit>
+		<Unit filename="/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/Lab3-Stereographic/Plane.h">
+			<Option target="Lab3_Stereographic"/>
+		</Unit>
 		<Unit filename="/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/Lab3-Stereographic/Raytracer.cpp">
 			<Option target="Lab3_Stereographic"/>
 		</Unit>
@@ -114,6 +120,12 @@
 			<Option target="Lab3_Stereographic"/>
 		</Unit>
 		<Unit filename="/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/Lab3-Stereographic/Sphere.h">
+			<Option target="Lab3_Stereographic"/>
+		</Unit>
+		<Unit filename="/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/Lab3-Stereographic/Texture.cpp">
+			<Option target="Lab3_Stereographic"/>
+		</Unit>
+		<Unit filename="/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/Lab3-Stereographic/Texture.h">
 			<Option target="Lab3_Stereographic"/>
 		</Unit>
 		<Unit filename="/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/Lab3-Stereographic/main.cpp">

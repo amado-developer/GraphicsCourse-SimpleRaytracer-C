@@ -168,6 +168,32 @@ CMakeFiles/Lab3_Stereographic.dir/Light.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab3_Stereographic.dir/Light.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/Lab3-Stereographic/Light.cpp -o CMakeFiles/Lab3_Stereographic.dir/Light.cpp.s
 
+CMakeFiles/Lab3_Stereographic.dir/Plane.cpp.o: CMakeFiles/Lab3_Stereographic.dir/flags.make
+CMakeFiles/Lab3_Stereographic.dir/Plane.cpp.o: ../Plane.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/Lab3-Stereographic/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Lab3_Stereographic.dir/Plane.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lab3_Stereographic.dir/Plane.cpp.o -c /Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/Lab3-Stereographic/Plane.cpp
+
+CMakeFiles/Lab3_Stereographic.dir/Plane.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab3_Stereographic.dir/Plane.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/Lab3-Stereographic/Plane.cpp > CMakeFiles/Lab3_Stereographic.dir/Plane.cpp.i
+
+CMakeFiles/Lab3_Stereographic.dir/Plane.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab3_Stereographic.dir/Plane.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/Lab3-Stereographic/Plane.cpp -o CMakeFiles/Lab3_Stereographic.dir/Plane.cpp.s
+
+CMakeFiles/Lab3_Stereographic.dir/Texture.cpp.o: CMakeFiles/Lab3_Stereographic.dir/flags.make
+CMakeFiles/Lab3_Stereographic.dir/Texture.cpp.o: ../Texture.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/Lab3-Stereographic/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Lab3_Stereographic.dir/Texture.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lab3_Stereographic.dir/Texture.cpp.o -c /Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/Lab3-Stereographic/Texture.cpp
+
+CMakeFiles/Lab3_Stereographic.dir/Texture.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab3_Stereographic.dir/Texture.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/Lab3-Stereographic/Texture.cpp > CMakeFiles/Lab3_Stereographic.dir/Texture.cpp.i
+
+CMakeFiles/Lab3_Stereographic.dir/Texture.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab3_Stereographic.dir/Texture.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/Lab3-Stereographic/Texture.cpp -o CMakeFiles/Lab3_Stereographic.dir/Texture.cpp.s
+
 # Object files for target Lab3_Stereographic
 Lab3_Stereographic_OBJECTS = \
 "CMakeFiles/Lab3_Stereographic.dir/main.cpp.o" \
@@ -176,7 +202,9 @@ Lab3_Stereographic_OBJECTS = \
 "CMakeFiles/Lab3_Stereographic.dir/Sphere.cpp.o" \
 "CMakeFiles/Lab3_Stereographic.dir/Materials.cpp.o" \
 "CMakeFiles/Lab3_Stereographic.dir/Intersect.cpp.o" \
-"CMakeFiles/Lab3_Stereographic.dir/Light.cpp.o"
+"CMakeFiles/Lab3_Stereographic.dir/Light.cpp.o" \
+"CMakeFiles/Lab3_Stereographic.dir/Plane.cpp.o" \
+"CMakeFiles/Lab3_Stereographic.dir/Texture.cpp.o"
 
 # External object files for target Lab3_Stereographic
 Lab3_Stereographic_EXTERNAL_OBJECTS =
@@ -188,9 +216,11 @@ Lab3_Stereographic: CMakeFiles/Lab3_Stereographic.dir/Sphere.cpp.o
 Lab3_Stereographic: CMakeFiles/Lab3_Stereographic.dir/Materials.cpp.o
 Lab3_Stereographic: CMakeFiles/Lab3_Stereographic.dir/Intersect.cpp.o
 Lab3_Stereographic: CMakeFiles/Lab3_Stereographic.dir/Light.cpp.o
+Lab3_Stereographic: CMakeFiles/Lab3_Stereographic.dir/Plane.cpp.o
+Lab3_Stereographic: CMakeFiles/Lab3_Stereographic.dir/Texture.cpp.o
 Lab3_Stereographic: CMakeFiles/Lab3_Stereographic.dir/build.make
 Lab3_Stereographic: CMakeFiles/Lab3_Stereographic.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/Lab3-Stereographic/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable Lab3_Stereographic"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/Lab3-Stereographic/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable Lab3_Stereographic"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Lab3_Stereographic.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

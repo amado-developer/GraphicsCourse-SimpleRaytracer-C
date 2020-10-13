@@ -22,17 +22,13 @@ tuple
 vector
 -
 
-/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/Lab3-Stereographic/Raytracer.cpp
-Raytracer.h
-/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/Lab3-Stereographic/Raytracer.h
-iostream
--
-vector
--
-tuple
--
-cmath
--
+/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/Lab3-Stereographic/Plane.h
+Materials.h
+/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/Lab3-Stereographic/Materials.h
+Intersect.h
+/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/Lab3-Stereographic/Intersect.h
+Lib.h
+/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/Lab3-Stereographic/Lib.h
 
 /Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/Lab3-Stereographic/Raytracer.h
 vector
@@ -45,6 +41,10 @@ Lib.h
 /Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/Lab3-Stereographic/Lib.h
 Light.h
 /Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/Lab3-Stereographic/Light.h
+Plane.h
+/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/Lab3-Stereographic/Plane.h
+Texture.h
+/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/Lab3-Stereographic/Texture.h
 
 /Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/Lab3-Stereographic/Sphere.h
 vector
@@ -59,4 +59,24 @@ Intersect.h
 /Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/Lab3-Stereographic/Intersect.h
 Materials.h
 /Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/Lab3-Stereographic/Materials.h
+
+/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/Lab3-Stereographic/Texture.h
+string
+-
+vector
+-
+Lib.h
+/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/Lab3-Stereographic/Lib.h
+
+/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/Lab3-Stereographic/main.cpp
+iostream
+-
+Raytracer.h
+/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/Lab3-Stereographic/Raytracer.h
+Materials.h
+/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/Lab3-Stereographic/Materials.h
+Plane.h
+/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/Lab3-Stereographic/Plane.h
+Texture.h
+/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/Lab3-Stereographic/Texture.h
 

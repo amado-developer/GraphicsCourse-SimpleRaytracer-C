@@ -94,12 +94,12 @@ clean: CMakeFiles/Lab3_Stereographic.dir/clean
 CMakeFiles/Lab3_Stereographic.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab3_Stereographic.dir/build.make CMakeFiles/Lab3_Stereographic.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab3_Stereographic.dir/build.make CMakeFiles/Lab3_Stereographic.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/Lab3-Stereographic/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target Lab3_Stereographic"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/Lab3-Stereographic/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target Lab3_Stereographic"
 .PHONY : CMakeFiles/Lab3_Stereographic.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Lab3_Stereographic.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/Lab3-Stereographic/cmake-build-debug/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/Lab3-Stereographic/cmake-build-debug/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Lab3_Stereographic.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/amado-developer/College/Graphics/GraphicsCourse-SimpleRaytracer-C/Lab3-Stereographic/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Lab3_Stereographic.dir/rule

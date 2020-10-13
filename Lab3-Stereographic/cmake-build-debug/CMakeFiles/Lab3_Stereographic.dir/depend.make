@@ -13,13 +13,21 @@ CMakeFiles/Lab3_Stereographic.dir/Light.cpp.o: ../Light.h
 CMakeFiles/Lab3_Stereographic.dir/Materials.cpp.o: ../Materials.cpp
 CMakeFiles/Lab3_Stereographic.dir/Materials.cpp.o: ../Materials.h
 
+CMakeFiles/Lab3_Stereographic.dir/Plane.cpp.o: ../Intersect.h
+CMakeFiles/Lab3_Stereographic.dir/Plane.cpp.o: ../Lib.h
+CMakeFiles/Lab3_Stereographic.dir/Plane.cpp.o: ../Materials.h
+CMakeFiles/Lab3_Stereographic.dir/Plane.cpp.o: ../Plane.cpp
+CMakeFiles/Lab3_Stereographic.dir/Plane.cpp.o: ../Plane.h
+
 CMakeFiles/Lab3_Stereographic.dir/Raytracer.cpp.o: ../Intersect.h
 CMakeFiles/Lab3_Stereographic.dir/Raytracer.cpp.o: ../Lib.h
 CMakeFiles/Lab3_Stereographic.dir/Raytracer.cpp.o: ../Light.h
 CMakeFiles/Lab3_Stereographic.dir/Raytracer.cpp.o: ../Materials.h
+CMakeFiles/Lab3_Stereographic.dir/Raytracer.cpp.o: ../Plane.h
 CMakeFiles/Lab3_Stereographic.dir/Raytracer.cpp.o: ../Raytracer.cpp
 CMakeFiles/Lab3_Stereographic.dir/Raytracer.cpp.o: ../Raytracer.h
 CMakeFiles/Lab3_Stereographic.dir/Raytracer.cpp.o: ../Sphere.h
+CMakeFiles/Lab3_Stereographic.dir/Raytracer.cpp.o: ../Texture.h
 
 CMakeFiles/Lab3_Stereographic.dir/Sphere.cpp.o: ../Intersect.h
 CMakeFiles/Lab3_Stereographic.dir/Sphere.cpp.o: ../Lib.h
@@ -27,11 +35,17 @@ CMakeFiles/Lab3_Stereographic.dir/Sphere.cpp.o: ../Materials.h
 CMakeFiles/Lab3_Stereographic.dir/Sphere.cpp.o: ../Sphere.cpp
 CMakeFiles/Lab3_Stereographic.dir/Sphere.cpp.o: ../Sphere.h
 
+CMakeFiles/Lab3_Stereographic.dir/Texture.cpp.o: ../Lib.h
+CMakeFiles/Lab3_Stereographic.dir/Texture.cpp.o: ../Texture.cpp
+CMakeFiles/Lab3_Stereographic.dir/Texture.cpp.o: ../Texture.h
+
 CMakeFiles/Lab3_Stereographic.dir/main.cpp.o: ../Intersect.h
 CMakeFiles/Lab3_Stereographic.dir/main.cpp.o: ../Lib.h
 CMakeFiles/Lab3_Stereographic.dir/main.cpp.o: ../Light.h
 CMakeFiles/Lab3_Stereographic.dir/main.cpp.o: ../Materials.h
+CMakeFiles/Lab3_Stereographic.dir/main.cpp.o: ../Plane.h
 CMakeFiles/Lab3_Stereographic.dir/main.cpp.o: ../Raytracer.h
 CMakeFiles/Lab3_Stereographic.dir/main.cpp.o: ../Sphere.h
+CMakeFiles/Lab3_Stereographic.dir/main.cpp.o: ../Texture.h
 CMakeFiles/Lab3_Stereographic.dir/main.cpp.o: ../main.cpp
 
