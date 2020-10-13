@@ -6,3 +6,8 @@ Simple Raytracing C++
 
 # RT2 Bears
 <img src="Images/RT2.bmp" width = "700px" />
+
+# Lab3 3D
+<img src="Images/normal.bmp" width = "700px" />
+<img src="Images/3D.bmp" width = "700px" />
+
